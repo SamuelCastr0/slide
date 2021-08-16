@@ -124,7 +124,7 @@ export class Slide {
     }
 }
 
-export class SlideNav extends Slide {
+export default class SlideNav extends Slide {
     constructor(slide, wrapper) {
         super(slide, wrapper);
         this.bindControlEvents();
@@ -134,7 +134,7 @@ export class SlideNav extends Slide {
         this.prevElement = document.querySelector(prev);
         this.nextElement = document.querySelector(next);
         this.addArrowEvent()
-        this.addControl()
+        
     }
 
     addArrowEvent() {
